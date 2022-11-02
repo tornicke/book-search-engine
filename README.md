@@ -47,6 +47,6 @@ THEN that book is deleted from my saved books list
 
 ## Required URLs
 
-[Live deployment URL](https://salty-fortress-09368.herokuapp.com/)
+[Heroku deployment URL](https://salty-fortress-09368.herokuapp.com/)
 
 [GitHub repository URL](https://github.com/tornicke/book-search-engine)
