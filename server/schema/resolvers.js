@@ -16,6 +16,7 @@ const resolvers = {
     },
   },
 
+  // Adding mutations
   Mutation: {
     addUser: async (parent, args) => {
       const user = await User.create(args);
