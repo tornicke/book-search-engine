@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const path = require("path");
 const db = require("./config/connection");
@@ -52,8 +54,8 @@ const { authMiddleware } = require("./utils/auth");
 
   // run the server on successful connection to db
   db.once("open", () => {
-    app.listen(PORT, () =>
-      console.log(`Now listening on http://localhost:${PORT}/graphql`)
-    );
+    app.listen(PORT, () => {
+      console.log(`Now listening on http://localhost:${PORT}/graphql`);
+    });
   });
 })();
